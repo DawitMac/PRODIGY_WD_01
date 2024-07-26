@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar"> 
+        <span>
+            <img src="./images/logo-2.png" alt="CodeAlpha" class="img-1" />
+            <img src="./images/logo-2 (1).png" alt="CodeAlpha" />
+        </span>
+
+        <ul class="navlist">
+           <li>Home</li>
+           <li>About</li>
+           <li>
+            <a href="index.html" class="my-link">Contact</a>
+         </li>
+        </ul>
+        <button class="menu-icon">
+           <img src="./images/menu1.png" alt="menu" />
+        </button>
+        <ul class="dropdown-menu">
+         <li>Home</li>
+         <li>About</li>
+         <li>
+            <a href="index.html">Contact</a>
+         </li>
+      </ul>
+      </nav>
+      <section>
+         <div class="info">
+            <h1>Prodigy InfoTech</h1>
+             <p>Providing World Class E-Learning Experince with Real world Internships</p>
+         </div>
+         <div class="about">
+            <div class="information">
+                <div class="intro">About Us</div>
+            <h1>
+                Transforming the Way People Learn
+            </h1>
+            <p>
+                Our mission is to create innovative and accessible learning solutions that empower people of all ages and backgrounds to achieve their full potential. Whether you're a student looking to improve your grades, a professional seeking to upskill, or an organization looking to enhance employee training, we have the tools and resources you need to succeed.
+
+              If you're looking for an innovative and dynamic learning experience that will help you achieve your goals and unlock your full potential, we invite you to join us on this exciting journey. Together, we can transform the way we learn and create a better future for all.
+            </p>
+            </div>
+            <img src="./images/about.svg" alt="menu" />
+         </div>
+      </section>
+      <script>
+        const menuIcon = document.querySelector(".menu-icon")
+          const dropdownMenu = document.querySelector(".dropdown-menu")
+        
+          menuIcon.addEventListener("click", function(){
+             dropdownMenu.classList.toggle("active");
+          })
+          const linkIcon = document.querySelector(".my-link")
+        
+          linkIcon.addEventListener("click", function(){
+            dropdownMenu.classList.toggle("active");
+         })
+         window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('.navbar');
+      var scrolled = window.scrollY > 0;
+
+      if (scrolled) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+            </script>
+</body>
+</html>
